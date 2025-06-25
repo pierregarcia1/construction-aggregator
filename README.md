@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Construction Materials Price Aggregator
 
-First, run the development server:
+A platform that helps contractors, builders, and homeowners compare prices for construction materials like concrete, steel, wood, brick, glass, cement, and more — across nearby suppliers — saving time and money.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Features
+
+Compare real-time prices from multiple suppliers  
+Filter by material type, quantity, and location  
+See estimated total cost and delivery options  
+Transparent supplier information  
+Mobile-friendly design for jobsite use  
+
+---
+
+## MVP Scope
+
+The Minimum Viable Product focuses on:
+
+- Material types: Concrete, Steel, Cement  
+- Geographic scope: Local suppliers within a chosen metro area  
+- Basic price comparison UI  
+- Manual or scraped price data for initial suppliers  
+
+---
+
+## Tech Stack (Planned)
+
+| Layer            | Technology              |
+|-----------------|------------------------|
+| Frontend        | React or Next.js (TypeScript)  
+| Backend         | Node.js + Express or Python (FastAPI)  
+| Database        | PostgreSQL + PostGIS (location-based search)  
+| APIs / Data     | Supplier-provided APIs, CSV imports, Web Scraping (where permitted)  
+| Authentication  | JWT, OAuth (future phase)  
+| Hosting         | Vercel, Netlify, or AWS (TBD)  
+
+---
+
+## Project Structure (Example)
+
+```
+construction-price-aggregator/
+|- client/               # Frontend React app
+|- server/               # Backend API
+|- scripts/              # Web scraping or data import tools
+|- database/             # SQL scripts & schema
+|- docs/                 # Architecture diagrams, planning docs
+|- README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Example Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Search Form:**
 
-## Learn More
+- Material: `Concrete`  
+- Quantity: `5 cubic yards`  
+- Location: `Dallas, TX`  
 
-To learn more about Next.js, take a look at the following resources:
+**Results:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Supplier        | Price per Yard | Total Price |
+|-----------------|----------------|-------------|
+| ABC Concrete    | $135           | $675        
+| ReadyMix Co.    | $140           | $700        
+| Local Supplier X| $150           | $750        
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Future Features (Planned)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Bulk quote request system  
+- Price drop alerts  
+- Supplier ratings and reviews  
+- Contractor subscription for premium features  
+- Mobile app version  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Contributing
+
+Interested in collaborating? Contributions are welcome!
+
+1. Fork the repo  
+2. Create a feature branch  
+3. Commit your changes  
+4. Submit a pull request  
+
+---
+
+## License
+
+[MIT License](LICENSE)
+
+---
+
+## Inspiration
+
+Modeled after platforms like **GoodRx**, this project brings price transparency to the fragmented construction materials market.
+
+---
+
+## Contact
+For questions, suggestions, or partnership inquiries:  
+pierre.ggarcia01@gmail.com
